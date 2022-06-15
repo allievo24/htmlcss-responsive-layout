@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primo-color:#0084FD;
+    --secondo-color:#B5DDFF;
+    --terzo-color:#9792E4;
+    --text-color:#ACACAC;
+    --nav-color:#FBFAFE;
+    --debug-color:#0ac138;
+    
+}
+
+
+
+.debug .box{
+    height: 80px;
+    padding: 20px;
+    background-color:var(--debug-color)
+}
+
+ 
+
+/* fine Regole debug*/
+
+
+/*Regole Comuni*/
+
+.container{
+  max-width: 768px;
+  margin: auto;
+}
+
+.flex{
+ display: flex;
+}
+
+.space-between{
+ justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+/*padding sulle assi delle x*/
+.px-2{
+    padding: 0 2rem;
+}
+
+
+
+
+/*   inzio header  */
+
+header{
+    width: 100%;
+    background-color: var(--primo-color);
+    margin-bottom: 2rem;
+}
+
+/*   fine header  */
+
+
+
+/*inzio intro*/
+
+#intro .card{
+    margin-bottom: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+
+}
+
+
+
+
+
+/*fine intro*/
+
+
+
+
+
+
+
+
+
+
+
+/*******Media Query**********/
+
+
+/*tablet breckpoint*/
+
+@media screen and (min-width:768px) {
+    .container {
+      max-width: 750px;
+   }
+    #intro .cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+        
+    }
+
+    #intro .card{
+        width: calc(33.333% - 1.5rem);
+        background-color: var(--debug-color);
+        
+    }
+
+    #intro .card:first-child{
+        width: calc(66.666% - 1.5rem);
+    }
+
+}
+
+
+/* PC/Descktop breckpoint */
+
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 950px;
+       }
+    #intro .card:first-child{
+        display: flex;
+    }
+    #intro .card:first-child .box{
+        width: 50%;
+
+        
+      } 
+      
+
+}
+
+
+/* ExtraLarge breckpoint*/
+
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+       
+    }
+
+    
+}
