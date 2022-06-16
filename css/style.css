@@ -90,6 +90,8 @@ header{
 
 }
 
+
+
 /*fine intro*/
 
 /*************Inizio planning*/
@@ -101,12 +103,29 @@ header{
 
 }
 
-
 #planning .colum{
    margin: 2rem;
-   
+}
+
+#planning img{
+ width: 100%;
+}    
+#planning .container:last-child{
+ background-color: #FBFAFE;
+ border-radius: 40px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*fine planning*/
 
