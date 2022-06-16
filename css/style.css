@@ -20,7 +20,8 @@
 .debug .box{
     height: 80px;
     padding: 20px;
-    background-color:var(--debug-color)
+    border: 2px dotted black;
+  
 }
 
  
@@ -28,7 +29,7 @@
 /* fine Regole debug*/
 
 
-/*Regole Comuni*/
+/*************Regole Comuni*****************/
 
 .container{
   max-width: 768px;
@@ -55,6 +56,12 @@
 
 
 
+
+
+
+/******************Fine regole comuni*******************/
+
+
 /*   inzio header  */
 
 header{
@@ -73,6 +80,82 @@ header{
     margin-bottom: 1.5rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    border-radius: 10px;
+
+}
+
+#intro .cards{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+
+}
+
+/*fine intro*/
+
+/*************Inizio planning*/
+
+#planning{
+    background-color: var(--terzo-color);
+    padding-top: 6rem ;
+    padding-bottom: 4rem;
+
+}
+
+
+#planning .colum{
+   margin: 2rem;
+   
+
+}
+
+/*fine planning*/
+
+/********fine testim*******/
+
+#testimonial .card{
+    background-color:var(--terzo-color) ;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+#testimonial .card-imag{
+    margin: 1rem;
+
+
+}
+
+/*********fine testimonial**********/
+
+/*********fine Benefit**********/
+
+#Benefit .card{
+    margin-bottom: 1.5rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    border-radius: 10px;
+
+}
+
+#Benefit .cards{
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+
+}
+/*********fine Benefit**********/
+
+/*********Inizio Abuot US**********/
+  
+#About-Us{
+    background-color: var(--terzo-color);
+    padding-top: 6rem ;
+    padding-bottom: 4rem;
+
+}
+
+
+#About-Us .colum{
+   margin: 2rem;
+   
 
 }
 
@@ -80,15 +163,11 @@ header{
 
 
 
-/*fine intro*/
 
 
 
 
-
-
-
-
+/*********Inizio Abuot US**********/
 
 
 
@@ -99,13 +178,12 @@ header{
 
 @media screen and (min-width:768px) {
     .container {
-      max-width: 750px;
+      max-width: 768px;
    }
     #intro .cards{
         display: flex;
         flex-wrap: wrap;
-        margin-left: -0.75rem;
-        margin-right: -0.75rem;
+       
         
     }
 
@@ -119,15 +197,47 @@ header{
         width: calc(66.666% - 1.5rem);
     }
 
+    #testimonial .card {
+        display: flex;
+    }
+    #testimonial .card-text {
+          flex-grow: 1;
+    }
+
+    #testimonial .card-imag {
+        flex-shrink: 0;
+        margin: 0 4rem 0 0;
+  }
+
+    #Benefit .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #Benefit .card{
+       width: calc(50% - 1.5rem); 
+    }
+
+    #About-Us .colums{
+        display: flex;
+        align-items: flex-start;
+
+    }  
+    #About-Us .colum{
+        width: calc(50% - 4rem);
+    }
+
+
+
+
+
 }
-
-
 /* PC/Descktop breckpoint */
 
 @media screen and (min-width:992px) {
     .container {
-        max-width: 950px;
-       }
+        max-width: 992px;
+    }
     #intro .card:first-child{
         display: flex;
     }
@@ -135,8 +245,20 @@ header{
         width: 50%;
 
         
-      } 
-      
+    } 
+    #planning .colums{
+        display: flex;
+        align-items: flex-end;
+
+    }  
+    #planning .colum{
+        width: calc(50% - 4rem);
+    }
+
+
+    #Benefit .card{
+        width: calc(33% - 1.5rem); 
+     }
 
 }
 
@@ -148,6 +270,5 @@ header{
         max-width: 1140px;
        
     }
-
     
 }
