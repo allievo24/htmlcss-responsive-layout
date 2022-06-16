@@ -20,7 +20,7 @@
 .debug .box{
     height: 80px;
     padding: 20px;
-    border: 2px dotted black;
+   /* border: 2px dotted black;*/
   
 }
 
@@ -53,8 +53,33 @@
     padding: 0 2rem;
 }
 
+.mb-30{
+    margin-bottom: 2rem;
+}
+
+.mt-30{
+    margin-top: 2rem;
+}
+.btn{
+    background-color: #9792E4;
+    padding: 0.5rem 3rem;
+    border-radius: 20px;
+    color: var(--nav-color);
+    text-decoration: none;   
+}
+.btn-large{
+    background-color: var(--nav-color);
+    padding: 0.5rem 3rem;
+    border-radius: 20px;
+    color: var(--terzo-color);
+    text-decoration: none;   
+}
 
 
+
+.fa-brands{
+    margin: 1rem;
+}
 
 
 
@@ -105,12 +130,14 @@ header{
 
 #planning .colum{
    margin: 2rem;
+   
 }
 
 #planning img{
  width: 100%;
 }    
-#planning .container:last-child{
+
+#planning .container :nth-child(1){
  background-color: #FBFAFE;
  border-radius: 40px;
 
@@ -130,42 +157,94 @@ header{
 /*fine planning*/
 
 /********fine testim*******/
+#testimonial{
+margin-top: 2rem;
+
+}
+
+
 
 #testimonial .card{
     background-color:var(--terzo-color) ;
     padding: 2rem;
     margin-bottom: 2rem;
+    border-radius:  30px;
+    
 }
-
 #testimonial .card-imag{
     margin: 1rem;
-
-
+    
 }
+.box-text{
+  text-align: center;
+}
+.box-img{
+    width:200px;
+    height: 200px;
+    margin: auto;
+    
+ 
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.card-text{
+    color: var(--nav-color);
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 /*********fine testimonial**********/
 
 /*********fine Benefit**********/
+
+#Benefit{
+ background-color: var(--terzo-color);
+
+}
 
 #Benefit .card{
     margin-bottom: 1.5rem;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     border-radius: 10px;
+    background-color: #FBFAFE;
+    padding: 2rem;
 
 }
 
 #Benefit .cards{
     margin-left: -0.75rem;
     margin-right: -0.75rem;
-
 }
+
+#Benefit .cards .card li{
+    margin: 2rem 0;
+    list-style: none;
+   
+}
+
+
+
+
+
+
+
 /*********fine Benefit**********/
 
 /*********Inizio Abuot US**********/
   
 #About-Us{
-    background-color: var(--terzo-color);
+    
     padding-top: 6rem ;
     padding-bottom: 4rem;
 
@@ -173,20 +252,49 @@ header{
 
 
 #About-Us .colum{
-   margin: 2rem;
+   margin: auto;
+   width: 50%;
    
-
 }
 
 
-
-
-
-
-
-
+#About-Us .colum img{
+    width: 50%;
+}
 
 /*********Inizio Abuot US**********/
+
+/*********Inzio footer************/
+
+#Get-Start{
+    background-color: var(--terzo-color);
+    
+}
+
+.box-footer{
+    margin: auto;
+    border: 2px solid black;
+    width: 80%;
+    text-align: center;
+}
+
+/*.privacy ul li, a{
+    color: aliceblue;
+    margin: 0 1rem;
+}*/
+
+.privacy ul :first-child{
+    list-style: none;
+}
+
+.privacy .lista,a{
+    justify-content: center;
+    color: aliceblue;
+    margin: 0 1rem;
+    
+}
+/*********Inzio footer************/
+
 
 
 
@@ -219,7 +327,7 @@ header{
     #testimonial .card {
         display: flex;
     }
-    #testimonial .card-text {
+     #testimonial .card-text {
           flex-grow: 1;
     }
 
@@ -246,11 +354,8 @@ header{
         width: calc(50% - 4rem);
     }
 
-
-
-
-
 }
+
 /* PC/Descktop breckpoint */
 
 @media screen and (min-width:992px) {
